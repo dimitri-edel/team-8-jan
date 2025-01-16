@@ -1,4 +1,4 @@
-var x = 8;
+var x = 7;
 
 function y() {
   console.log('Hello');
