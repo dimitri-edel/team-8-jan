@@ -38,7 +38,7 @@ function loadNavbar() {
 // Function to load the Footer
 function loadFooter() {
     const footerHtml = `
-        <footer class="footer bg-dark text-white py-4">
+        <footer class="footer py-4">
             <div class="container text-center">
                 <p>&copy; 2025 Traffick Stopper. All rights reserved.</p>
                 <p>
