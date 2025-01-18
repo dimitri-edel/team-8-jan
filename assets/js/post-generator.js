@@ -108,7 +108,7 @@ function postOnTwitter() {
     window.open(facebookUrl, '_blank'); 
   }
   
-  // Function to post on LinkedIn (simplified).src
+  // Function to post on LinkedIn (simplified)
   function postOnLinkedIn() {
     const image = document.getElementById('post-image').src;
     const text = document.getElementById('post-text').value;
