@@ -104,7 +104,7 @@ function postOnTwitter() {
     const text = document.getElementById('post-text').value;
     const headline = document.getElementById('post-title').textContent;
 
-    const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(image)}&t=${encodeURIComponent(headline)}&quote=${encodeURIComponent(text)}`;
+    const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(image)}&quote=${encodeURIComponent(text)}&title=${encodeURIComponent(headline)}`;
     window.open(facebookUrl, '_blank'); 
   }
   
