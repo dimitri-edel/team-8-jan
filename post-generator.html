@@ -15,6 +15,62 @@
 
     <!-- Particles -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Styles to be migrated to a stylesheet -->
+    <style>
+        .share-button-container {
+          position: relative;
+          display: inline-block;
+        }
+    
+        .share-button {
+          padding: 10px;
+          border-radius: 5px;
+          background-color: #e6e6e6;
+          cursor: pointer;
+        }
+    
+        .share-button:hover {
+          background-color: #ddd;
+        }
+    
+        .share-menu {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          display: none;
+          background-color: #f0f0f0;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    
+        .share-menu.show {
+          display: block;
+        }
+    
+        .share-menu button {
+          display: block;
+          width: 100%;
+          text-align: left;
+          padding: 10px;
+        }
+    
+        /* Icon styles */
+        .twitter-icon {
+          color: #1da1f2;
+        }
+    
+        .facebook-icon {
+          color: #3b5998;
+        }
+    
+        .linkedin-icon {
+          color: #0077b5;
+        }
+      </style>
 </head>
 <body>
 
@@ -54,11 +110,28 @@
                     <img id="post-image" class="img-fluid mt-3 rounded" src="" alt="Post Image" />
                 </div>
             </div>
-    
+           
             <div class="mt-4 text-center">
                 <button class="btn primary btn-lg mx-2" id="copy-text">Copy Post Text</button>
                 <button class="btn secondary btn-lg mx-2 mt-3 mt-lg-0" id="download-image">Download Post Image</button>
                 <button class="btn success btn-lg mx-2 mt-3 mt-lg-0" id="preview-post">Preview Your Post</button>
+                <div class="share-button-container">
+                    <button class="share-button" onclick="toggleMenu()">
+                      Share <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                     <!-- Button for sharing the post on social media -->
+                    <div class="share-menu" id="shareMenu">
+                      <button class="share-button" onclick="postOnTwitter()">
+                        <i class="fa-brands fa-twitter twitter-icon"></i> Twitter
+                      </button>
+                      <button class="share-button" onclick="postOnFacebook()">
+                        <i class="fa-brands fa-facebook-f facebook-icon"></i> Facebook
+                      </button>
+                      <button class="share-button" onclick="postOnLinkedIn()">
+                        <i class="fa-brands fa-linkedin-in linkedin-icon"></i> LinkedIn
+                      </button>
+                    </div>
+                  </div>
             </div>
         </div>
     </div>
@@ -70,7 +143,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
+    
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById('shareMenu');
+        menu.classList.toggle('show');
+      }
+    </script>
     <!-- Custom JS -->
     <script src="assets/js/particles-config.js"></script>
     <script src="assets/js/navbar-footer.js"></script>
