@@ -3,7 +3,7 @@ function loadNavbar() {
     const currentPage = window.location.pathname.split("/").pop();
 
     const navbarHtml = `
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/images/logo-light.png" id="logo" alt="Logo" class="logo-img" style="width: 120px;">
@@ -38,15 +38,32 @@ function loadNavbar() {
 // Function to load the Footer
 function loadFooter() {
     const footerHtml = `
-        <footer class="footer py-4">
-            <div class="container text-center">
-                <p>&copy; 2025 Traffick Stopper. All rights reserved.</p>
-                <p>
-                    <a href="resources.html" class="text-white">Resources</a> | 
-                    <a href="learn-more.html" class="text-white">Learn More</a>
-                </p>
+            <footer class="footer text-white py-5" style="background-color: #2c3e50;">
+            <div class="container">
+                <div class="row">
+                    <!-- About Us Section -->
+                    <div class="col-md-6">
+                        <h5>About Us</h5>
+                        <p>We raise awareness about modern slavery and provide a platform to make a difference. Join us in the fight to end human trafficking and support victims worldwide.</p>
+                    </div>
+
+                    <!-- Social Icons Section -->
+                    <div class="col-md-6">
+                        <h5>Follow Us</h5>
+                        <div class="social-icons">
+                            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>`;
+            <div class="text-center mt-4">
+                <p>&copy; 2025 Traffick Stopper. All rights reserved.</p>
+            </div>
+        </footer>
+    `;
     document.getElementById("footer-placeholder").insertAdjacentHTML("beforeend", footerHtml);
 }
 
