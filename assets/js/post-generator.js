@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const posts = {
         "youth-focused": {
             text: "Youth are the future. Let's empower them to make the world a better place! #YouthPower #ChangeMakers",
-            image: "assets/images/youth-focused.jpg"
+            image: "assets/images/pexels-pixabay-236147.jpg"
         },
         "general-awareness": {
             text: "Awareness is the first step toward change. Let's educate and act. #Awareness #TakeAction",

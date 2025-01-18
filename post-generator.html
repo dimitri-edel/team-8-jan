@@ -29,10 +29,10 @@
     </section>
 
     <div class="container mt-5">
-        <div class="post-customization-panel">
+        <div class="post-customization-panel shadow-lg p-4 rounded-lg bg-white">
             <div class="category-selector">
                 <h3>Select a Post Category</h3>
-                <ul class="nav nav-pills">
+                <ul class="nav nav-pills justify-content-center">
                     <li class="nav-item">
                         <button class="nav-link active" id="youth-focused-btn">Youth-Focused</button>
                     </li>
@@ -44,20 +44,21 @@
                     </li>
                     <li class="nav-item">
                         <button class="nav-link" id="awareness-btn">Awareness</button>
-                    </li>
-                </ul>
+                    </ul>
             </div>
+    
             <div class="customization-options mt-4">
                 <div id="post-preview">
                     <h4 id="post-title">Post Preview</h4>
                     <textarea id="post-text" class="form-control" rows="5" placeholder="Your post content will appear here..."></textarea>
-                    <img id="post-image" class="img-fluid mt-3" src="" alt="Post Image" />
+                    <img id="post-image" class="img-fluid mt-3 rounded" src="" alt="Post Image" />
                 </div>
             </div>
+    
             <div class="mt-4 text-center">
-                <button class="btn btn-primary" id="copy-text">Copy Post Text</button>
-                <button class="btn btn-secondary mt-3" id="download-image">Download Post Image</button>
-                <button class="btn btn-success mt-3" id="preview-post">Preview Your Post</button>
+                <button class="btn primary btn-lg mx-2" id="copy-text">Copy Post Text</button>
+                <button class="btn secondary btn-lg mx-2 mt-3 mt-lg-0" id="download-image">Download Post Image</button>
+                <button class="btn success btn-lg mx-2 mt-3 mt-lg-0" id="preview-post">Preview Your Post</button>
             </div>
         </div>
     </div>
