@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Function to post on Twitter
 function postOnTwitter() {
-    const image = document.getElementById('post-image');
+    const image = document.getElementById('post-image').src;
     const text = document.getElementById('post-text').value;
     const headline = document.getElementById('post-title').textContent;
 
@@ -100,7 +100,7 @@ function postOnTwitter() {
   
   // Function to post on Facebook (simplified)
   function postOnFacebook() {    
-    const image = document.getElementById('post-image');
+    const image = document.getElementById('post-image').src;
     const text = document.getElementById('post-text').value;
     const headline = document.getElementById('post-title').textContent;
 
@@ -108,9 +108,9 @@ function postOnTwitter() {
     window.open(facebookUrl, '_blank'); 
   }
   
-  // Function to post on LinkedIn (simplified)
+  // Function to post on LinkedIn (simplified).src
   function postOnLinkedIn() {
-    const image = document.getElementById('post-image');
+    const image = document.getElementById('post-image').src;
     const text = document.getElementById('post-text').value;
     const headline = document.getElementById('post-title').textContent;
 
