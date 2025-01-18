@@ -1,0 +1,86 @@
+.main-content {
+    flex: 1;
+}
+
+.hero {
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    width: 100%;
+}
+
+.hero-content h1 {
+    font-size: var(--font-size-heading);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: var(--font-size-subheading);
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-buttons .btn {
+    font-size: var(--font-size-base);
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.primary {
+    background-color: var(--accent-color-dark);
+    border-color: var(--accent-color-dark);
+}
+
+.primary:hover {
+    background-color: var(--accent-color-light);
+    border-color: var(--accent-color-light);
+    color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.secondary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+#carouselExampleCaptions {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+#carouselExampleCaptions .carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+}
+
+.carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+}

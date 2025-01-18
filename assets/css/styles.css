@@ -27,6 +27,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    font-family: var(--font-family);
 }
 
 body {
@@ -35,19 +36,51 @@ body {
     min-height: 100vh;
 }
 
-.main-content {
-    flex: 1;
+/* Particles Background */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: black;
 }
 
-/* Footer styles */
+
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0) !important;
+    box-shadow: none;
+}
+
 footer {
-    background-color: var(--primary-color);
-    color: #fff;
+    background-color: rgba(13, 54, 238, 0) !important;
+    box-shadow: none;
+}
+footer {
+    color: var(--white-color);
     padding: 20px 0;
     text-align: center;
     width: 100%;
 }
 
+footer p {
+    margin: 0;
+    font-size: var(--font-size-small);
+}
+
+footer a {
+    color: var(--accent-color-light);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 #footer-placeholder {
     margin-top: auto;
 }
+
