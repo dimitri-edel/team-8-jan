@@ -94,3 +94,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
 });
+
+function toggleMenu() {
+    const menu = document.getElementById('shareMenu');
+    menu.classList.toggle('show');
+  }
