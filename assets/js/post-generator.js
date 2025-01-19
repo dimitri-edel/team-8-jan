@@ -184,6 +184,7 @@ function postOnLinkedIn() {
     const text = document.getElementById('post-text').value;
     const headline = document.getElementById('post-title').textContent;
 
+    console.log("image URL: ", image);
     const linkedinUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(image)}&title=${encodeURIComponent(headline)}&text=${encodeURIComponent(text)}`;
     window.open(linkedinUrl, '_blank');
 }

@@ -245,12 +245,39 @@ This project is licensed under the MIT License.
 
 [Back to Contents](#contents)
 
-## Testing
+## Manual Testing
+
+### Navigation Bar
 
 | TEST                   | ACTION                                | EXPECTATION                              | RESULT    |
 |------------------------|---------------------------------------|------------------------------------------|-----------|
 | **About Us Link**   | User clicks on the **About Us** link in the Navigation Bar | The **About Us** page opens            | **SUCCESS** |
 | **Resources Link** | User clicks on the **Resources Link** link in the Navigation Bar | The **Resources** page pens            | **SUCCESS** |
+
+### Post Generator Page
+
+| TEST                   | ACTION                                | EXPECTATION                              | RESULT    |
+|------------------------|---------------------------------------|------------------------------------------|-----------|
+|   |   |   |   |
+
+### Learn More Page
+
+| TEST                   | ACTION                                | EXPECTATION                              | RESULT    |
+|------------------------|---------------------------------------|------------------------------------------|-----------|
+|   |   |   |   |
+
+### Resources Page
+
+| TEST                   | ACTION                                | EXPECTATION                              | RESULT    |
+|------------------------|---------------------------------------|------------------------------------------|-----------|
+|   |   |   |   |
+
+
+### About Us Page
+
+| TEST                   | ACTION                                | EXPECTATION                              | RESULT    |
+|------------------------|---------------------------------------|------------------------------------------|-----------|
+|   |   |   |   |
 
 [Back to Contents](#contents)
 
