@@ -55,3 +55,13 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error("No post data found in localStorage.");
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const goBackButton = document.getElementById('go-back');
+    if (goBackButton) {
+        goBackButton.addEventListener('click', function () {
+            window.history.back();
+        });
+    }
+});
+
