@@ -76,6 +76,93 @@ To create a website `Code To Protect` for national slavery and human trafficking
 
 ## User Stories
 
+## User Stories
+
+### 1. Quickly Access Pre-Written Posts
+**As a user**,  
+I want to browse a library of pre-written trafficking prevention posts,  
+So I can easily find and share impactful messages.  
+
+**Acceptance Criteria**:  
+- A minimum of 20 pre-written posts must be available.  
+- Posts are organized into categories (e.g., general awareness, youth-focused, UK statistics).  
+- Users can filter posts by platform (e.g., Twitter, Instagram).  
+
+---
+
+### 2. Relevant Hashtag Suggestions
+**As a user**,  
+I want to see relevant hashtags with each post,  
+So that I can maximize its visibility on social media.  
+
+**Acceptance Criteria**:  
+- Suggested hashtags include 2-5 keywords relevant to anti-trafficking campaigns (e.g., #EndTrafficking, #ModernSlavery).  
+- All hashtags are UK-specific where applicable.  
+- Users can optionally customize hashtags before sharing.  
+
+---
+
+### 3. Easy Sharing and Downloading
+**As a user**,  
+I want to copy text or download an image with a single click,  
+So I can quickly share content.  
+
+**Acceptance Criteria**:  
+- A "Copy Text" button copies both the post and hashtags to the clipboard.  
+- A "Download Image" button downloads the associated image file.  
+- Buttons are responsive, with hover/click effects for visual feedback.  
+
+---
+
+### 4. Real-Time Post Previews
+**As a user**,  
+I want to preview the post in real time,  
+So I can see how it will appear on a social media platform.  
+
+**Acceptance Criteria**:  
+- Previews include text, hashtags, and the selected image.  
+- The layout matches the style of the chosen platform (e.g., character limits for Twitter, image dimensions for Instagram).  
+- The preview updates instantly as I change options.  
+
+---
+
+### 5. Localized Content
+**As a charity or supporter in the UK**,  
+I want the app to include UK-specific content,  
+So the messages are relevant to my audience.  
+
+**Acceptance Criteria**:  
+- Posts reference UK statistics (e.g., 2023 trafficking data).  
+- Links to at least 5 UK-based anti-trafficking organizations are included.  
+- Content avoids jargon and uses language accessible to a general UK audience.  
+
+---
+
+### 6. Responsive Design
+**As a mobile user**,  
+I want the app to work seamlessly on my device,  
+So I can share posts on the go.  
+
+**Acceptance Criteria**:  
+- The app functions on screen widths of 320px and larger.  
+- Buttons and text are legible and usable on mobile, tablet, and desktop devices.  
+- The design adheres to mobile-first principles, ensuring critical features are easy to access.  
+
+---
+
+### 7. Clear Calls-to-Action
+**As a first-time visitor**,  
+I want clear instructions and action buttons,  
+So I know how to use the app.  
+
+**Acceptance Criteria**:  
+- The homepage features a brief explanation of the app’s purpose (max 2 sentences).  
+- Prominent buttons for "Generate Post," "Download Image," and "Share Now."  
+- Tooltips or popups briefly explain buttons on hover or first use.  
+
+---
+
+
 
 [Back to Contents](#contents)
 
