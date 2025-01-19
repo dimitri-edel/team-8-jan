@@ -1,0 +1,30 @@
+.main-content {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1em;
+}
+.main-content h1 {
+    font-family: var(--font-family);
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: var(--secondary-color);
+}
+
+.main-content h2 {
+    font-family: var(--font-family);
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: white;
+}
+
+p {
+    font-family: var(--font-family);
+    font-size: 1.2em;
+    color: white;
+}
+
+li {
+    font-family: var(--font-family);
+    font-size: 1.2em;
+    color: white;
+}
