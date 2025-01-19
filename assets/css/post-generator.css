@@ -1,0 +1,260 @@
+.post-customization-panel {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: var(--font-size-heading);
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+}
+
+.hero-content p {
+    font-size: var(--font-size-subheading);
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+#post-preview {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category-selector h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #6c5b7b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#post-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #6c5b7b;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+#post-title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#post-text {
+    flex: 1;
+    min-width: 250px;
+    height: 200px;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    resize: vertical;
+}
+
+#post-text:focus {
+    border-color: #ffadad;
+    box-shadow: 0 0 6px rgba(255, 173, 173, 0.6);
+    outline: none;
+}
+
+#post-image {
+    width: 300px;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.nav-pills {
+    border-bottom: 2px solid #ffadad;
+    margin-bottom: 30px;
+}
+
+.nav-pills .nav-link {
+    border-radius: 30px 30px 0 0;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #6c5b7b;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #f1f1f1;
+}
+
+.nav-pills .nav-link.active {
+    color: #fff;
+    background-color: #ffadad;
+    border-color: #ffadad;
+    font-weight: 600;
+}
+
+button.btn {
+    font-size: var(--font-size-base);
+    padding: 14px 35px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+button.primary {
+    background-color: #ffadad;
+    border-color: #ffadad;
+    color: #fff;
+}
+
+button.primary:hover {
+    background-color: #ffc1c1;
+    border-color: #ffadad;
+    color: #fff;
+}
+
+button.secondary {
+    background-color: #9bade9;
+    border-color: #9bade9;
+    color: #fff;
+}
+
+button.secondary:hover {
+    background-color: #a3c9f9;
+    border-color: #a3c9f9;
+    color: #fff;
+}
+
+button.success {
+    background-color: #a8d08d;
+    border-color: #a8d08d;
+    color: #fff;
+}
+
+button.success:hover {
+    background-color: #7ac142;
+    border-color: #7ac142;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    .post-customization-panel {
+        padding: 20px;
+    }
+
+    .nav-pills .nav-link {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    #post-preview {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #post-text {
+        width: 100%;
+    }
+
+    #post-image {
+        width: 100%;
+        max-height: 200px;
+    }
+}
+
+/* Styles for the share post elements */
+.share-button-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .share-button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+    cursor: pointer;
+  }
+
+  .share-button:hover {
+    background-color: #ddd;
+  }
+
+  .share-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .share-menu.show {
+    display: block;
+  }
+
+  .share-menu button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+  }
+
+  /* Icon styles */
+  .twitter-icon {
+    color: #1da1f2;
+  }
+
+  .facebook-icon {
+    color: #3b5998;
+  }
+
+  .linkedin-icon {
+    color: #0077b5;
+  }
