@@ -118,3 +118,12 @@ function postOnTwitter() {
   window.open(linkedinUrl, '_blank');
     window.open(linkedinUrl, '_blank');
   }
+
+  const postText = document.getElementById('post-text').value;
+  const postImage = document.getElementById('post-image').src;
+
+  localStorage.setItem('postText', postText);
+  localStorage.setItem('postImage', postImage);
+
+  // Redirect to post-preview.html
+  window.location.href = 'post-preview.html';
