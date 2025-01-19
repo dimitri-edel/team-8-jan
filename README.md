@@ -89,6 +89,18 @@ The landing page explains the value of out project
 
 The laearn more page 
 
+![Post Generator](/documentation/wireframes/Post%20Generator.png)
+
+The page contains pre-written posts that can be shared on social-media
+
+![Post Preview](/documentation/wireframes/Post%20Preview.png)
+
+The page allows users to see what their post will look like on the targeted platform
+
+![Resources](/documentation/wireframes/Resources.png)
+
+The page contains information on organizations that deal with modern slavery
+
 [Back to Contents](#contents)
 
 ## Project Structure
