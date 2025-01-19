@@ -37,7 +37,7 @@
 .category-selector h3 {
     font-size: 1.8rem;
     font-weight: 600;
-    color: #5a327c;
+    color: black;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 15px;
@@ -48,7 +48,7 @@
 #post-title {
     font-size: 1.6rem;
     font-weight: 700;
-    color: #5a327c;
+    color: black;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1.2px;
@@ -59,11 +59,12 @@
 #post-title {
     text-align: center;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #post-text {
     flex: 1;
+    width: 50%;
     min-width: 250px;
     height: 200px;
     margin-top: 10px;
@@ -78,15 +79,15 @@
 }
 
 #post-text:focus {
-    border-color: #ffadad;
+    border-color: #008C8C;
     box-shadow: 0 0 6px rgba(255, 173, 173, 0.6);
     outline: none;
 }
 
 #post-image {
-    width: 300px;
+    width: 400px;
     height: auto;
-    max-height: 200px;
+    max-height: 300px;
     object-fit: cover;
     border-radius: 8px;
     margin-top: 10px;
@@ -94,7 +95,7 @@
 
 /* Navigation Pills */
 .nav-pills {
-    border-bottom: 2px solid #ffadad;
+    border-bottom: 2px solid #008C8C;
     margin-bottom: 30px;
 }
 
@@ -104,8 +105,8 @@
     font-size: 1.1rem;
     font-weight: 500;
     text-transform: uppercase;
-    color: #5a327c;
-    background-color: transparent;
+    color: black;
+    background-color: #f1f1f1;
     border: 1px solid #ddd;
     transition: all 0.3s ease;
 }
@@ -116,8 +117,8 @@
 
 .nav-pills .nav-link.active {
     color: #fff;
-    background-color: #ffadad;
-    border-color: #ffadad;
+    background-color: #008C8C;
+    border-color: #008C8C;
     font-weight: 600;
 }
 
@@ -126,54 +127,58 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;  /* Adds spacing between buttons */
+    gap: 15px;
 }
 
 button.btn {
     font-size: var(--font-size-base);
-    padding: 14px 30px;  /* Adjust padding for better sizing */
+    padding: 14px 30px;
     border-radius: 50px;
     transition: all 0.3s ease;
     font-weight: bold;
     letter-spacing: 1px;
-    white-space: nowrap;  /* Prevents text from breaking to a new line */
+    white-space: nowrap;
 }
 
+/* Primary Button (Teal) */
 button.primary {
-    background-color: #ffadad;
-    border-color: #ffadad;
+    background-color: #008C8C; /* Teal */
+    border-color: #008C8C;
     color: #fff;
 }
 
 button.primary:hover {
-    background-color: #ffc1c1;
-    border-color: #ffadad;
+    background-color: #006f6f; /* Darker Teal */
+    border-color: #006f6f;
     color: #fff;
 }
 
+/* Secondary Button (Yellow) */
 button.secondary {
-    background-color: #9bade9;
-    border-color: #9bade9;
+    background-color: #ffbb33; /* Yellow */
+    border-color: #ffbb33;
     color: #fff;
 }
 
 button.secondary:hover {
-    background-color: #a3c9f9;
-    border-color: #a3c9f9;
+    background-color: #e6a800; /* Darker Yellow */
+    border-color: #e6a800;
     color: #fff;
 }
 
+/* Success Button (Teal) */
 button.success {
-    background-color: #a8d08d;
-    border-color: #a8d08d;
+    background-color: #008C8C; /* Teal */
+    border-color: #008C8C;
     color: #fff;
 }
 
 button.success:hover {
-    background-color: #7ac142;
-    border-color: #7ac142;
+    background-color: #006f6f; /* Darker Teal */
+    border-color: #006f6f;
     color: #fff;
 }
+
 
 /* Share Button and Dropdown Menu */
 .share-button-container {
@@ -184,9 +189,11 @@ button.success:hover {
 .share-button {
     padding: 10px 25px;
     border-radius: 50px;
-    background-color: #e6e6e6;
     cursor: pointer;
     white-space: nowrap;
+    background-color: #ffbb33 !important;
+    color: #f1f1f1;
+    border: none;
 }
 
 .share-button:hover {
@@ -198,9 +205,10 @@ button.success:hover {
     top: 100%;
     left: 0;
     display: none;
-    background-color: #f0f0f0;
-    border-radius: 5px;
+    background-color: #ffbb33 !important;
+    border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #f1f1f1;
 }
 
 .share-menu.show {
@@ -209,7 +217,7 @@ button.success:hover {
 
 .share-menu button {
     display: block;
-    width: auto;  /* Keeps buttons from taking up full width */
+    width: auto;
     padding: 10px 20px;
     border: none;
     text-align: left;
@@ -293,6 +301,7 @@ img {
     margin-top: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 [data-aos="fade-up"] {
     opacity: 0;
