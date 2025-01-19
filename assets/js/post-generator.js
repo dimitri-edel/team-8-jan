@@ -5,72 +5,73 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 text:  "Young people in the UK are especially vulnerable to trafficking and exploitation.\n📢 If something feels wrong, speak up. No one deserves to be trapped or exploited.\n💡 Find out how to protect yourself and your friends:\n🌐 AntiSlavery.org/resources\n📞 Helpline: 08000 121 700\nTogether, we can #StopTrafficking.",
                 image: "assets/images/pexels-pixabay-236147.jpg"
+               
             },
             {
                 text: "The strength of youth lies in their ability to challenge and change the status quo. #YouthLeadership #InspireChange",
-                image: "assets/images/youth-leadership.jpg"
+                image: "assets/images/protest.jpg"
             },
             {
                 text: "Youth have the power to drive social change. It's time to take action and lead! #SocialChange #YouthInAction",
-                image: "assets/images/youth-action.jpg"
+                image: "assets/images/use-your-voice.jpg"
             },
             {
                 text: "Empower youth to create positive social impact. They are the changemakers of tomorrow! #YouthEmpowerment #ChangeAgents",
-                image: "assets/images/youth-empowerment.jpg"
+                image: "assets/images/change.jpg"
             }
         ],
         "general-awareness": [
             {
                 text: "Awareness is the first step toward change. Let's educate and act. #Awareness #TakeAction",
-                image: "assets/images/general-awareness.jpg"
+                image: "assets/images/presentation.jpg"
             },
             {
                 text: "The more we know, the more we can fight against modern slavery. Knowledge is power. #EndSlavery #EducateToEmpower",
-                image: "assets/images/knowledge.jpg"
+                image: "assets/images/human-rights-sign.jpg"
             },
             {
-                text: "Awareness saves lives. Let’s spread the message to end human trafficking! #StopTrafficking #PublicAwareness",
-                image: "assets/images/awareness-campaign.jpg"
+                text: "Awareness saves lives. Let's spread the message to end human trafficking! #StopTrafficking #PublicAwareness",
+                image: "assets/images/hand-and-chain.jpg"
             },
             {
                 text: "A world without trafficking begins with awareness. Let's educate ourselves and others. #AwarenessMatters #EndModernSlavery",
-                image: "assets/images/world-without-trafficking.jpg"
+                image: "assets/images/boy-through-window.jpg"
             }
         ],
         "donation-appeals": [
             {
                 text: "Your donation can change lives. Join us in the fight against modern slavery. #DonateNow #HelpSaveLives",
-                image: "assets/images/donation-appeals.jpg"
+                image: "assets/images/donate-box.jpg"
             },
             {
                 text: "Every dollar you donate can help us rescue victims of human trafficking. Give today! #DonateForFreedom #SaveLives",
-                image: "assets/images/charity-donation.jpg"
+                image: "assets/images/donations.jpg"
             },
             {
                 text: "Together, we can end modern slavery. Your donation brings hope to those in need. #HopeForChange #DonateToEndSlavery",
-                image: "assets/images/giving-back.jpg"
+                image: "assets/images/light-through-darkness.jpg"
             },
             {
                 text: "Your generosity can help us provide critical support to victims of trafficking. Donate now! #SupportSurvivors #DonateToEndSlavery",
-                image: "assets/images/support-survivors.jpg"
+                image: "assets/images/am-i-next.jpg"
             }
         ],
         "awareness": [
             {
                 text: "Every person deserves to live in freedom. Spread the word, make a difference. #Awareness #EndModernSlavery",
-                image: "assets/images/awareness.jpg"
+                image: "assets/images/hand-breaking-out-of-cuffs.jpg"
             },
             {
                 text: "Join the fight against modern slavery. Awareness is the first step in ending human trafficking. #FightSlavery #BeTheChange",
-                image: "assets/images/fight-slavery.jpg"
+                image: "assets/images/man-and-door-with-lock.jpg"
             },
             {
                 text: "Spread the word, educate others. Together, we can end modern slavery. #Awareness #NoMoreSlavery",
-                image: "assets/images/spread-awareness.jpg"
+                image: "assets/images/person-sitting-in-corner-with-head-down.jpg"
             },
             {
                 text: "Awareness leads to action. Let's shine a light on modern slavery and stand against injustice. #EndSlavery #AwarenessCampaign",
-                image: "assets/images/shine-a-light.jpg"
+                image: "assets/images/child-under-a-street-lamp.jpg"
             }
         ]
     };
@@ -184,6 +185,7 @@ function postOnLinkedIn() {
     const text = document.getElementById('post-text').value;
     const headline = document.getElementById('post-title').textContent;
 
+    console.log("image URL: ", image);
     const linkedinUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(image)}&title=${encodeURIComponent(headline)}&text=${encodeURIComponent(text)}`;
     window.open(linkedinUrl, '_blank');
 }

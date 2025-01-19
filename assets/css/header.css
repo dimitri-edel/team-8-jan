@@ -10,6 +10,7 @@
     text-align: center;
     padding: 50px 0;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .hero-content h1 {
@@ -35,6 +36,7 @@
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    width: 50%;
 }
 
 .cta-buttons .btn {
@@ -44,31 +46,36 @@
     transition: all 0.3s ease;
     font-weight: bold;
     letter-spacing: 1px;
+    /* Ensure the buttons are equal width */
+    flex: 1; /* This makes both buttons take up equal space */
+    min-width: 200px; /* You can set a minimum width to ensure buttons are not too small */
+    text-align: center; /* Ensures text stays centered in the button */
 }
 
 .primary {
-    background-color: #008C8C;
-    border-color: #008C8C;
+    background-color: #ffbb33;
+    border-color: #d29418;
     color: var(--white-color);
 }
 
 .primary:hover {
     background-color: #ffffff;
-    border-color: #008C8C;
-    color: #008C8C;
+    border-color: #ffbb33;
+    color: #ffbb33;
 }
 
 .secondary {
-    background-color: #005B8C;
-    border-color: #005B8C;
+    background-color: #008C8C;
+    border-color: #008C8C;
     color: var(--white-color);
 }
 
 .secondary:hover {
-    background-color: #00A9E0;
-    border-color: #00A9E0;
-    color: var(--white-color);
+    background-color: #ffffff;
+    border-color: #008C8C;
+    color: #008C8C;
 }
+
 
 #carouselExampleCaptions {
     max-width: 70%;
@@ -76,7 +83,7 @@
 }
 
 #carouselExampleCaptions .carousel-inner img {
-    max-height: 400px;
+    max-height: 500px;
     object-fit: cover;
 }
 

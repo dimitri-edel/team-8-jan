@@ -41,26 +41,17 @@ function loadFooter() {
             <footer class="footer text-white py-5" style="background-color: #2c3e50;">
             <div class="container">
                 <div class="row">
-                    <!-- About Us Section -->
-                    <div class="col-md-6">
-                        <h5>About Us</h5>
-                        <p>We raise awareness about modern slavery and provide a platform to make a difference. Join us in the fight to end human trafficking and support victims worldwide.</p>
-                    </div>
-
-                    <!-- Social Icons Section -->
-                    <div class="col-md-6">
-                        <h5>Follow Us</h5>
                         <div class="social-icons">
-                            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="text-center mt-4">
-                <p>&copy; 2025 Traffick Stopper. All rights reserved.</p>
+                <p>&copy; 2025 Spot Trafficking, Stop Trafficking. All rights reserved.</p>
             </div>
         </footer>
     `;
