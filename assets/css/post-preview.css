@@ -3,6 +3,7 @@
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
 }
 
 #post-preview h2 { 
@@ -11,7 +12,7 @@
     margin-bottom: 20px;
     font-family: var(--font-family);
     font-size: var(--font-size-heading);
-    color: #5a327c;
+    color: black;
 }
 
 .preview-card {
@@ -49,10 +50,13 @@
 
 /* Image Styling */
 .preview-card img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     border-radius: 10px;
     margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nav-pills {
@@ -206,7 +210,6 @@
 }
 
 .instagram-preview img {
-    max-width: 100%;
     border-radius: 10px;
 }
 
@@ -368,37 +371,38 @@
 }
 
 #go-back {
-    background-color: #6c5b7b;
-    border-color: #6c5b7b;
+    background-color: #008C8C;
+    border-color: #008C8C;
     color: #fff;
 }
 
 #go-back:hover {
-    background-color: #9b7f8d;
-    border-color: #9b7f8d;
+    background-color: #007474;
+    border-color: #007474;
 }
 
 #copy-post-text {
-    background-color: #ffadad;
-    border-color: #ffadad;
+    background-color: #ffbb33;
+    border-color: #ffbb33;
     color: #fff;
 }
 
 #copy-post-text:hover {
-    background-color: #ffc1c1;
-    border-color: #ffadad;
+    background-color: #ff9d00;
+    border-color: #ffbb33;
 }
 
 #download-post-image {
-    background-color: #a8d08d;
-    border-color: #a8d08d;
+    background-color: #008C8C;
+    border-color: #008C8C;
     color: #fff;
 }
 
 #download-post-image:hover {
-    background-color: #7ac142;
-    border-color: #7ac142;
+    background-color: #007474;
+    border-color: #007474;
 }
+
 
 #go-back i, #copy-post-text i, #download-post-image i {
     margin-right: 8px;
