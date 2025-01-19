@@ -42,10 +42,10 @@ function loadFooter() {
             <div class="container">
                 <div class="row">
                         <div class="social-icons">
-                            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
