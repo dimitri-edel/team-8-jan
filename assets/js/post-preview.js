@@ -63,5 +63,33 @@ document.addEventListener('DOMContentLoaded', function () {
             window.history.back();
         });
     }
+    const copyPostTextButton = document.getElementById('copy-post-text');
+    if (copyPostTextButton) {
+        copyPostTextButton.addEventListener('click', function () {
+            const postText = localStorage.getItem('postText');
+            if (postText) {
+                navigator.clipboard.writeText(postText).then(function () {
+                    alert('Post text copied to clipboard!');
+                }).catch(function (err) {
+                    console.error('Failed to copy text: ', err);
+                });
+            } else {
+                alert('No post content available to copy.');
+            }
+        });
+    }
+    const downloadImageButton = document.getElementById('download-post-image');
+    if (downloadImageButton) {
+        downloadImageButton.addEventListener('click', function () {
+            const postImage = localStorage.getItem('postImage');
+            if (postImage) {
+                const link = document.createElement('a');
+                link.href = postImage;
+                link.download = 'generated-post-image.jpg';
+                link.click();
+            } else {
+                alert('No post image available to download.');
+            }
+        });
+    }
 });
-
