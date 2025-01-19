@@ -7,3 +7,8 @@ AOS.init({
         $('#carouselExampleCaptions').on('slid.bs.carousel', function () {
             AOS.refresh(); // Re-refresh AOS to apply animations after slide change
         });
+
+AOS.init({
+            duration: 900, // Animation duration in milliseconds
+            once: true, // Only animate once when it scrolls into view
+        });

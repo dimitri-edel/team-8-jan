@@ -1,38 +1,97 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Predefined posts for each category
+    // Predefined posts for each category (now with 4 posts per category)
     const posts = {
-        "youth-focused": {
-            text: "Youth are the future. Let's empower them to make the world a better place! #YouthPower #ChangeMakers",
-            image: "assets/images/pexels-pixabay-236147.jpg"
-        },
-        "general-awareness": {
-            text: "Awareness is the first step toward change. Let's educate and act. #Awareness #TakeAction",
-            image: "assets/images/general-awareness.jpg"
-        },
-        "donation-appeals": {
-            text: "Your donation can change lives. Join us in the fight against modern slavery. #DonateNow #HelpSaveLives",
-            image: "assets/images/donation-appeals.jpg"
-        },
-        "awareness": {
-            text: "Every person deserves to live in freedom. Spread the word, make a difference. #Awareness #EndModernSlavery",
-            image: "assets/images/awareness.jpg"
-        }
+        "youth-focused": [
+            {
+                text: "Youth are the future. Let's empower them to make the world a better place! #YouthPower #ChangeMakers",
+                image: "assets/images/pexels-pixabay-236147.jpg"
+            },
+            {
+                text: "The strength of youth lies in their ability to challenge and change the status quo. #YouthLeadership #InspireChange",
+                image: "assets/images/youth-leadership.jpg"
+            },
+            {
+                text: "Youth have the power to drive social change. It's time to take action and lead! #SocialChange #YouthInAction",
+                image: "assets/images/youth-action.jpg"
+            },
+            {
+                text: "Empower youth to create positive social impact. They are the changemakers of tomorrow! #YouthEmpowerment #ChangeAgents",
+                image: "assets/images/youth-empowerment.jpg"
+            }
+        ],
+        "general-awareness": [
+            {
+                text: "Awareness is the first step toward change. Let's educate and act. #Awareness #TakeAction",
+                image: "assets/images/general-awareness.jpg"
+            },
+            {
+                text: "The more we know, the more we can fight against modern slavery. Knowledge is power. #EndSlavery #EducateToEmpower",
+                image: "assets/images/knowledge.jpg"
+            },
+            {
+                text: "Awareness saves lives. Let’s spread the message to end human trafficking! #StopTrafficking #PublicAwareness",
+                image: "assets/images/awareness-campaign.jpg"
+            },
+            {
+                text: "A world without trafficking begins with awareness. Let's educate ourselves and others. #AwarenessMatters #EndModernSlavery",
+                image: "assets/images/world-without-trafficking.jpg"
+            }
+        ],
+        "donation-appeals": [
+            {
+                text: "Your donation can change lives. Join us in the fight against modern slavery. #DonateNow #HelpSaveLives",
+                image: "assets/images/donation-appeals.jpg"
+            },
+            {
+                text: "Every dollar you donate can help us rescue victims of human trafficking. Give today! #DonateForFreedom #SaveLives",
+                image: "assets/images/charity-donation.jpg"
+            },
+            {
+                text: "Together, we can end modern slavery. Your donation brings hope to those in need. #HopeForChange #DonateToEndSlavery",
+                image: "assets/images/giving-back.jpg"
+            },
+            {
+                text: "Your generosity can help us provide critical support to victims of trafficking. Donate now! #SupportSurvivors #DonateToEndSlavery",
+                image: "assets/images/support-survivors.jpg"
+            }
+        ],
+        "awareness": [
+            {
+                text: "Every person deserves to live in freedom. Spread the word, make a difference. #Awareness #EndModernSlavery",
+                image: "assets/images/awareness.jpg"
+            },
+            {
+                text: "Join the fight against modern slavery. Awareness is the first step in ending human trafficking. #FightSlavery #BeTheChange",
+                image: "assets/images/fight-slavery.jpg"
+            },
+            {
+                text: "Spread the word, educate others. Together, we can end modern slavery. #Awareness #NoMoreSlavery",
+                image: "assets/images/spread-awareness.jpg"
+            },
+            {
+                text: "Awareness leads to action. Let's shine a light on modern slavery and stand against injustice. #EndSlavery #AwarenessCampaign",
+                image: "assets/images/shine-a-light.jpg"
+            }
+        ]
     };
 
     // Function to update the post content based on the selected category
     function updatePostContent(category) {
-        const post = posts[category];
+        const postList = posts[category];
 
         // Check if the post exists in our predefined posts object
-        if (!post) {
-            console.error('No post found for this category!');
+        if (!postList) {
+            console.error('No posts found for this category!');
             return;
         }
 
+        // Randomly select a post from the list
+        const randomPost = postList[Math.floor(Math.random() * postList.length)];
+
         // Update the title, text, and image in the preview area
         document.getElementById('post-title').textContent = category.replace("-", " ").toUpperCase() + " Post";
-        document.getElementById('post-text').value = post.text;
-        document.getElementById('post-image').src = post.image;
+        document.getElementById('post-text').value = randomPost.text;
+        document.getElementById('post-image').src = randomPost.image;
     }
 
     // Set initial content to "youth-focused"
@@ -92,35 +151,39 @@ document.addEventListener('DOMContentLoaded', function() {
         // Redirect to post-preview.html
         window.location.href = 'post-preview.html';
     });
-    
 });
+
+function toggleMenu() {
+    const menu = document.getElementById('shareMenu');
+    menu.classList.toggle('show');
+}
 
 // Function to post on Twitter
 function postOnTwitter() {
     const image = document.getElementById('post-image').src;
     const text = document.getElementById('post-text').value;
     const headline = document.getElementById('post-title').textContent;
-  
+
     const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(headline + " " + text)}&url=${encodeURIComponent(image)}`;
     window.open(twitterUrl, '_blank');
-  }
-  // Function to post on Facebook (simplified)
-  function postOnFacebook() {    
+}
+
+// Function to post on Facebook (simplified)
+function postOnFacebook() {    
     const image = document.getElementById('post-image').src;
     const text = document.getElementById('post-text').value;
     const headline = document.getElementById('post-title').textContent;
-  
+
     const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(image)}&quote=${encodeURIComponent(text)}&title=${encodeURIComponent(headline)}`;
     window.open(facebookUrl, '_blank'); 
-  }
-  
-  // Function to post on LinkedIn (simplified)
-  function postOnLinkedIn() {
+}
+
+// Function to post on LinkedIn (simplified)
+function postOnLinkedIn() {
     const image = document.getElementById('post-image').src;
     const text = document.getElementById('post-text').value;
     const headline = document.getElementById('post-title').textContent;
-  
+
     const linkedinUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(image)}&title=${encodeURIComponent(headline)}&text=${encodeURIComponent(text)}`;
-  window.open(linkedinUrl, '_blank');
     window.open(linkedinUrl, '_blank');
-  }
+}
