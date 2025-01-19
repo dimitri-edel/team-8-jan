@@ -83,7 +83,11 @@ To create a website `Code To Protect` for national slavery and human trafficking
 
 ![Landing Page](/documentation/wireframes/Landing%20Page.png)
 
-The landing page 
+The landing page explains the value of out project
+
+![Learn More](/documentation/wireframes/Learn%20More.png)
+
+The laearn more page 
 
 [Back to Contents](#contents)
 
