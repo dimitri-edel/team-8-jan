@@ -50,7 +50,7 @@
 - [Project Overview](#project-overview)
 - [Goals](#goals)
 - [User Stories](#user-stories)
-- [Wireframe](#wireframe)
+- [Wireframes](#wireframes)
 - [Project Structure](#project-structure)
 - [Pages](#pages)
 - [Styles](#styles)
@@ -79,7 +79,11 @@ To create a website `Code To Protect` for national slavery and human trafficking
 
 [Back to Contents](#contents)
 
-## Wireframe
+## Wireframes
+
+![Landing Page](/documentation/wireframes/Landing%20Page.png)
+
+The landing page 
 
 [Back to Contents](#contents)
 
