@@ -95,6 +95,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
 });
 
+function toggleMenu() {
+    const menu = document.getElementById('shareMenu');
+    menu.classList.toggle('show');
+  }
+
 // Function to post on Twitter
 function postOnTwitter() {
     const image = document.getElementById('post-image').src;
