@@ -38,7 +38,6 @@
     font-size: 1.8rem;
     font-weight: 600;
     color: black;
-    text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 15px;
     text-align: center;
@@ -104,7 +103,6 @@
     padding: 12px 30px;
     font-size: 1.1rem;
     font-weight: 500;
-    text-transform: uppercase;
     color: black;
     background-color: #f1f1f1;
     border: 1px solid #ddd;
