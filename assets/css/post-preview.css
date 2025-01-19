@@ -7,7 +7,11 @@
 
 #post-preview h2 { 
     text-align: center;
+    font-weight: 700;
     margin-bottom: 20px;
+    font-family: var(--font-family);
+    font-size: var(--font-size-heading);
+    color: #5a327c;
 }
 
 .preview-card {
@@ -18,13 +22,29 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.preview-actions button,
+.preview-actions .action-button {
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.preview-actions button:hover,
+.preview-actions .action-button:hover {
+    background-color: #1a91da;
+}
+
+.preview-actions button:focus,
+.preview-actions .action-button:focus {
+    outline: none;
+}
+
 .preview-actions button:active {
     transform: scale(0.98);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.preview-actions button:focus {
-    outline: none;
 }
 
 /* Image Styling */
@@ -38,30 +58,58 @@
 .nav-pills {
     justify-content: center;
     margin-bottom: 30px;
+    gap: 20px;
 }
 
 .nav-pills .nav-link {
     border-radius: 50px;
     padding: 10px 20px;
     font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.nav-pills .nav-link.active {
-    background-color: #1da1f2;
-    color: white;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-pills .nav-link:hover {
     background-color: #ddd;
+    color: black;
 }
 
+/* Tab Content */
 .tab-content .tab-pane {
     display: none;
 }
 
 .tab-content .tab-pane.active {
     display: block;
+}
+
+#facebook-tab {
+    background-color: #1877f2;
+    color: white;
+    font-weight: bold;
+}
+
+#facebook-tab.active {
+    background-color: #1266b0;
+}
+
+#instagram-tab {
+    background: linear-gradient(90deg, #ff6a00, #ff3366);
+    color: white;
+    font-weight: bold;
+}
+
+#instagram-tab.active {
+    background: linear-gradient(90deg, #ff0084, #f55951);
+}
+
+#x-tab {
+    background-color: #000;
+    color: white;
+    font-weight: bold;
+}
+
+#x-tab.active {
+    background-color: #333;
 }
 
 .preview-header {
@@ -88,23 +136,6 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
-}
-
-.preview-actions button {
-    padding: 8px 15px;
-    border-radius: 30px;
-    font-size: 14px;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.3s;
-}
-
-.preview-actions button:focus {
-    outline: none;
-}
-
-.preview-actions button:hover {
-    background-color: #1a91da;
 }
 
 .facebook-preview .preview-card {
@@ -174,30 +205,15 @@
     position: relative;
 }
 
-.preview-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.preview-avatar {
-    width: 50px;
+.instagram-preview img {
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 .preview-username {
     font-weight: bold;
     font-size: 16px;
     color: black;
-}
-
-.preview-content {
-    color: black;
-    margin-top: 10px;
-}
-
-.instagram-preview img {
-    max-width: 100%;
-    border-radius: 10px;
 }
 
 .preview-description {
