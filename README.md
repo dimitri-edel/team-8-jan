@@ -248,6 +248,17 @@ This project is licensed under the MIT License.
 
 ## Manual Tests
 
+### Home page
+
+| TEST                   | ACTION                                | EXPECTATION                              | RESULT    |
+|------------------------|---------------------------------------|------------------------------------------|-----------|
+|  **Animation** | User opens the page  | The contents appear in an animated fashion  | **SUCCESS** |
+|  **Generate Post Button** | User clicks on the button  | The page for generating posts opens | **SUCCESS** |
+| **Learn More Button** | User clicks on the the button  | The Learn More opens | **SUCCESS** |
+| **Image Carousel Arrows** | The user clicks on one of the arrow buttons at the sides of the slide show | A different image appears | **SUCCESS** |
+| **Image Carousel Bars** | The user clicks on one of the bars at the bottom of the slide show | A different image appears | **SUCCESS** |
+
+
 ### Navigation Bar
 
 | TEST                   | ACTION                                | EXPECTATION                              | RESULT    |
@@ -288,20 +299,30 @@ This project is licensed under the MIT License.
 
 | TEST                   | ACTION                                | EXPECTATION                              | RESULT    |
 |------------------------|---------------------------------------|------------------------------------------|-----------|
-|   |   |   |   |
+|  **Scroll down animation**  | User scrolls down the page  | More articles appear as the user is scrolling along  | **SUCCESS**   |
 
 ### Resources Page
 
 | TEST                   | ACTION                                | EXPECTATION                              | RESULT    |
 |------------------------|---------------------------------------|------------------------------------------|-----------|
-|   |   |   |   |
-
+|  **Animation** | User opens the page  | The contents appear in an animated fashion  | **SUCCESS**   |
+| **Link to GLAA** | User clicks on the link | The GLAA website opens in a separate window | **SUCCESS** |
+| **Link to NCA** | User clicks on the link | The NCA website opens in a separate window | **SUCCESS** |
+| **Link to Home Office - Modern Slavery Helpline** | User clicks on the link | The Home Office - Modern Slavery Helpline website opens in a separate window | **SUCCESS** |
+| **Link to Unseen UK** | User clicks on the link | The Unseen UK website opens in a separate window | **SUCCESS** |
+| **Link to ECPAT UK** | User clicks on the link | The ECPAT UK website opens in a separate window | **SUCCESS** |
+| **Link to Anti-Slavery International** | User clicks on the link | The Anti-Slavery International website opens in a separate window | **SUCCESS** |
+| **Link to Hope for Justice** | User clicks on the link | The Hope for Justice website opens in a separate window | **SUCCESS** |
+| **Link to The Clewer Initiative** | User clicks on the link | The The Clewer Initiative website opens in a separate window | **SUCCESS** |
+| **Link to Stop the Traffik UK** | User clicks on the link | The Stop the Traffik UK website opens in a separate window | **SUCCESS** |
 
 ### About Us Page
 
 | TEST                   | ACTION                                | EXPECTATION                              | RESULT    |
 |------------------------|---------------------------------------|------------------------------------------|-----------|
-|   |   |   |   |
+|  **Animation** | User opens the page  | The contents appear in an animated fashion. | **SUCCESS**   |
+|  **Github Links** | User clicks on a link of one of the team members  | The Github page of the respective team member opens in a separate window | **FIXED** The links would open in the same window. Now they open in a separate window  |
+|  **LinkedIn Links** | User clicks on a link of one of the team members  | The public profile of the respective team member opens in a separate window | **FIXED** The links would open in the same window. Now they open in a separate window  |
 
 [Back to Contents](#contents)
 
