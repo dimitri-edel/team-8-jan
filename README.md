@@ -340,9 +340,16 @@ https://validator.w3.org/nu
 https://jigsaw.we.org/css-validator/validator
 
 3. Lighthouse.
+### About Us Page
+![About Us Page](documentation/tests/about.jpg)
+### Index / Main Page
+![Index / Main Page](documentation/tests/index.jpg)
+### Learn More Page
+![Learn More Page](documentation/tests/learn-more.jpg)
+### Post Generator Page
+![Post Generator Page](documentation/tests/post-generator.jpg)
+### Resources Page
+![Resources Page](documentation/tests/resources.jpg)
 
-![Results Lighthouse](/documentation/tests/lighthouse.png)
-
-The performance is subpar, because the resolution of some images is too high. The images that must not have high resulution must be converted to a lower resolution.
 
 [Back to Contents](#contents)
