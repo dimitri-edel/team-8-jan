@@ -61,6 +61,7 @@
 - [How to Run / Deployment](#how-to-run--deployment)
 - [Contributing](#contributing)
 - [License](#license)
+- [Manual Tests](#manual-tests)
 - [Validator Testing](#validator-testing)
 
 ## Project Overview
@@ -245,7 +246,7 @@ This project is licensed under the MIT License.
 
 [Back to Contents](#contents)
 
-## Manual Testing
+## Manual Tests
 
 ### Navigation Bar
 
@@ -253,6 +254,9 @@ This project is licensed under the MIT License.
 |------------------------|---------------------------------------|------------------------------------------|-----------|
 | **About Us Link**   | User clicks on the **About Us** link in the Navigation Bar | The **About Us** page opens            | **SUCCESS** |
 | **Resources Link** | User clicks on the **Resources Link** link in the Navigation Bar | The **Resources** page pens            | **SUCCESS** |
+| **Learn More Link**   | User clicks on the **Learn More** link in the Navigation Bar | The **Learn More** page opens            | **SUCCESS** |
+| **Post Generator Link**   | User clicks on the **Post Generator** link in the Navigation Bar | The **Post Generator** page opens            | **SUCCESS** |
+| **Home Link**   | User clicks on the **Home** link in the Navigation Bar | The **Home** page opens            | **SUCCESS** |
 
 ### Post Generator Page
 
