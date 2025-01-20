@@ -266,7 +266,23 @@ This project is licensed under the MIT License.
 |  **Pre-writen Posts selection** | User clicks on one of the four tabs for different categories  | A different message and a different image appear |  **SUCCESS**  |
 | **Copy Post Text** button | User clicks on the button | The post message is copied to the clip-board |  **SUCCESS**  |
 | **Download Post Image** button | User clicks on the button | The image gets downloaded by the user's browser | **SUCCESS**  |
-| 
+| **Preview Post** button | User clicks on the button | The preview page opens | **SUCCESS**  |
+| **Share menu opens** | Usr hovers over the button or clicks on it | The menu unfolds underneath the button | **SUCCESS**  |
+| **Share menu twitter** | User selects twitter from the share menu | The window opens that allows them to post the data on their twitter account | **SUCCESS**  |
+| **Share menu facebook** | User selects facebook from the share menu | The window opens that allows them to post the data on their facebook account | **SUCCESS**  |
+| **Share menu LinkedIn** | User selects LinkedIn from the share menu | The window opens that allows them to post the data on their LinkedIn account | **SUCCESS**  |
+
+### Preview Page
+
+| TEST                   | ACTION                                | EXPECTATION                              | RESULT    |
+|------------------------|---------------------------------------|------------------------------------------|-----------|
+|  **Facebook** presentation | User clicks on the facebook button  | The content is presented how it would appear on facebook  |  **SUCCESS**  |
+| **X / Twitter** presentation | User clicks on the **X / Twitter** button | The content is presented how it would appear on **X / Twitter**  |  **SUCCESS**  |
+| **LinkedIn** presentation | User clicks on the **LinkedIn** buttoon | The content is presented how it would appear on **LinkedIn** | **FAILED** - Instead of LinkedIn button, there is a **Instagram** button |
+| **Go Back** button | User clicks on the **Go Back** button | The **Post Generator** page opens | **SUCCESS** |
+| **Copy Post Text** button | User clicks on the **Copy Post Text** button | The text gets copied to the clip-board | **SUCCESS** |
+| **Download Post Image** button | User clicks on the button | The image gets downloaded by the user's browser | **SUCCESS**  |
+
 
 ### Learn More Page
 
