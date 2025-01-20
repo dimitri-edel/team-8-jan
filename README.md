@@ -61,6 +61,7 @@
 - [How to Run / Deployment](#how-to-run--deployment)
 - [Contributing](#contributing)
 - [License](#license)
+- [Manual Tests](#manual-tests)
 - [Validator Testing](#validator-testing)
 
 ## Project Overview
@@ -245,7 +246,7 @@ This project is licensed under the MIT License.
 
 [Back to Contents](#contents)
 
-## Manual Testing
+## Manual Tests
 
 ### Navigation Bar
 
@@ -253,12 +254,19 @@ This project is licensed under the MIT License.
 |------------------------|---------------------------------------|------------------------------------------|-----------|
 | **About Us Link**   | User clicks on the **About Us** link in the Navigation Bar | The **About Us** page opens            | **SUCCESS** |
 | **Resources Link** | User clicks on the **Resources Link** link in the Navigation Bar | The **Resources** page pens            | **SUCCESS** |
+| **Learn More Link**   | User clicks on the **Learn More** link in the Navigation Bar | The **Learn More** page opens            | **SUCCESS** |
+| **Post Generator Link**   | User clicks on the **Post Generator** link in the Navigation Bar | The **Post Generator** page opens            | **SUCCESS** |
+| **Home Link**   | User clicks on the **Home** link in the Navigation Bar | The **Home** page opens            | **SUCCESS** |
+| **Respoonsive Design**   | User opens the website on a small mobile device | The navigation menu becomes collpsible | **SUCCESS** |
 
 ### Post Generator Page
 
 | TEST                   | ACTION                                | EXPECTATION                              | RESULT    |
 |------------------------|---------------------------------------|------------------------------------------|-----------|
-|   |   |   |   |
+|  **Pre-writen Posts selection** | User clicks on one of the four tabs for different categories  | A different message and a different image appear |  **SUCCESS**  |
+| **Copy Post Text** button | User clicks on the button | The post message is copied to the clip-board |  **SUCCESS**  |
+| **Download Post Image** button | User clicks on the button | The image gets downloaded by the user's browser | **SUCCESS**  |
+| 
 
 ### Learn More Page
 
