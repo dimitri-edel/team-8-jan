@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Predefined posts for each category (now with 4 posts per category)
     const posts = {
         "youth-focused": [
             {
-                text: "Youth are the future. Let's empower them to make the world a better place! #YouthPower #ChangeMakers",
-                image: "assets/images/young-people.jpg"
+                text:  "Young people in the UK are especially vulnerable to trafficking and exploitation.\n📢 If something feels wrong, speak up. No one deserves to be trapped or exploited.\n💡 Find out how to protect yourself and your friends:\n🌐 AntiSlavery.org/resources\n📞 Helpline: 08000 121 700\nTogether, we can #StopTrafficking.",
+                image: "assets/images/person-sitting-in-corner-with-head-down.jpg"
+               
             },
             {
                 text: "The strength of youth lies in their ability to challenge and change the status quo. #YouthLeadership #InspireChange",
@@ -184,6 +184,7 @@ function postOnLinkedIn() {
     const text = document.getElementById('post-text').value;
     const headline = document.getElementById('post-title').textContent;
 
+    console.log("image URL: ", image);
     const linkedinUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(image)}&title=${encodeURIComponent(headline)}&text=${encodeURIComponent(text)}`;
     window.open(linkedinUrl, '_blank');
 }
