@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const posts = {
         "youth-focused": [
             {
-                text:  "Young people in the UK are especially vulnerable to trafficking and exploitation.\n📢 If something feels wrong, speak up. No one deserves to be trapped or exploited.\n💡 Find out how to protect yourself and your friends:\n🌐 AntiSlavery.org/resources\n📞 Helpline: 08000 121 700\nTogether, we can #StopTrafficking.",
+                text: "Young people in the UK are especially vulnerable to trafficking and exploitation.\n📢 If something feels wrong, speak up. No one deserves to be trapped or exploited.\n💡 Find out how to protect yourself and your friends:\n🌐 AntiSlavery.org/resources\n📞 Helpline: 08000 121 700\nTogether, we can #StopTrafficking.",
                 image: "assets/images/person-sitting-in-corner-with-head-down.jpg"
-               
+
             },
             {
                 text: "The strength of youth lies in their ability to challenge and change the status quo. #YouthLeadership #InspireChange",
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Handle the tab button clicks
     const tabButtons = document.querySelectorAll('.nav-link');
     tabButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             const category = button.id.replace('-btn', '');  // Extract category from button ID
 
             // Hide all content and remove active class from all buttons
@@ -113,12 +113,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Handle "Copy Post Text" button click
-    document.getElementById('copy-text').addEventListener('click', function() {
+    document.getElementById('copy-text').addEventListener('click', function () {
         const postText = document.getElementById('post-text').value;
         if (postText && postText !== "Your post content will appear here.") {
-            navigator.clipboard.writeText(postText).then(function() {
+            navigator.clipboard.writeText(postText).then(function () {
                 alert("Post text copied to clipboard!");
-            }).catch(function(err) {
+            }).catch(function (err) {
                 console.error("Failed to copy text: ", err);
             });
         } else {
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Handle "Download Post Image" button click
-    document.getElementById('download-image').addEventListener('click', function() {
+    document.getElementById('download-image').addEventListener('click', function () {
         const postImage = document.getElementById('post-image');
         if (postImage.src && postImage.src !== "") {
             const link = document.createElement('a');
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Handle "Preview Your Post" button click
-    document.getElementById('preview-post').addEventListener('click', function() {
+    document.getElementById('preview-post').addEventListener('click', function () {
 
         const postText = document.getElementById('post-text').value;
         const postImage = document.getElementById('post-image').src;
@@ -169,13 +169,13 @@ function postOnTwitter() {
 }
 
 // Function to post on Facebook (simplified)
-function postOnFacebook() {    
+function postOnFacebook() {
     const image = document.getElementById('post-image').src;
     const text = document.getElementById('post-text').value;
     const headline = document.getElementById('post-title').textContent;
 
     const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(image)}&quote=${encodeURIComponent(text)}&title=${encodeURIComponent(headline)}`;
-    window.open(facebookUrl, '_blank'); 
+    window.open(facebookUrl, '_blank');
 }
 
 // Function to post on LinkedIn (simplified)
@@ -187,4 +187,15 @@ function postOnLinkedIn() {
     console.log("image URL: ", image);
     const linkedinUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(image)}&title=${encodeURIComponent(headline)}&text=${encodeURIComponent(text)}`;
     window.open(linkedinUrl, '_blank');
+}
+
+function postOnInstagram() {
+    const image = document.getElementById('post-image').src;
+    const text = document.getElementById('post-text').value;
+    const headline = document.getElementById('post-title').textContent;
+
+    const caption = `${headline}\n${text} #️⃣hashtags`;
+    const encodedCaption = encodeURIComponent(caption);
+    const instagramUrl = `https://www.instagram.com/p/?image=${image}&caption=${encodedCaption}`;
+    window.open(instagramUrl, '_blank');
 }
