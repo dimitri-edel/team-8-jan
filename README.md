@@ -10,7 +10,6 @@
 - [Styles](#styles)
 - [Images](#images)
 - [Dependencies](#dependencies)
-- [Features](#features)
 - [AI Usage](#ai-usage)
 - [How to Run / Deployment](#how-to-run--deployment)
 - [Contributing](#contributing)
@@ -28,8 +27,6 @@ To create a website `Code To Protect` for national slavery and human trafficking
 ## Goals
 
 [Back to Contents](#contents)
-
-## User Stories
 
 ## User Stories
 
@@ -147,37 +144,85 @@ The page contains information on organizations that deal with modern slavery
 
 ## Project Structure
 ```
+The project is organized as follows:
 
+HopeShieldConnect/
+├── documentation/
+│   ├── wireframes/
+│   │   ├── Landing Page.png
+│   │   ├── Learn More.png
+│   │   ├── Post Generator.png
+│   │   ├── Post Preview.png
+│   │   └── Resources.png
+├── src/
+│   ├── css/
+│   │   └── styles.css
+│   ├── images/
+│   │   └── various image files
+│   ├── js/
+│   │   └── scripts.js
+│   ├── index.html
+│   └── other HTML files
+├── .gitignore
+├── README.md
+└── LICENSE
 ```
 [Back to Contents](#contents)
 
 ## Pages
-
+```
+about.html
+index.html
+learn-more.html
+post-generator.html
+post-preview.html
+resources.html
+```
 
 [Back to Contents](#contents)
 
 ## Styles
-
+```
+about.css
+header.css
+learn-more.css
+post-generator.css
+post-preview.css
+resources.css
+styles.css
+```
 
 [Back to Contents](#contents)
 
 ## Images
-
-
+```
+assets/images/
+├── logo.png
+├── banner.jpg
+├── icons/
+│   ├── facebook.png
+│   ├── twitter.png
+│   ├── instagram.png
+│   └── linkedin.png
+├── posts/
+│   ├── post1.jpg
+│   ├── post2.jpg
+│   ├── post3.jpg
+│   └── post4.jpg
+└── backgrounds/
+    ├── bg1.jpg
+    ├── bg2.jpg
+    └── bg3.jpg
+```
 [Back to Contents](#contents)
 
 ## Dependencies
-
-
-[Back to Contents](#contents)
-
-## Features
-
+No dependencies in this current build, however for a better social post experience we could integrate an API for each social media platform however this would require subscriptions we did not have time for in this project.
 
 [Back to Contents](#contents)
 
 ## AI Usage
-
+AI has been used to help create some of the images on this project. We have also used AI to help us with some of the edits of our code to speed up production in the project.
 
 [Back to Contents](#contents)
 
