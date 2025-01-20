@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Predefined posts for each category (now with 4 posts per category)
     const posts = {
-        "Your Voice Matters: Take a Stand Against Trafficking": [
+        "youth-focused": [
             {
                 text:  "Young people in the UK are especially vulnerable to trafficking and exploitation.\n📢 If something feels wrong, speak up. No one deserves to be trapped or exploited.\n💡 Find out how to protect yourself and your friends:\n🌐 AntiSlavery.org/resources\n📞 Helpline: 08000 121 700\nTogether, we can #StopTrafficking.",
-                image: "assets/images/pexels-pixabay-236147.jpg"
+                image: "assets/images/person-sitting-in-corner-with-head-down.jpg"
                
             },
             {
