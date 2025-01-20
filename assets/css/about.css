@@ -20,7 +20,6 @@
     letter-spacing: 2px;
     line-height: 1.2;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .card-text a {
