@@ -427,4 +427,8 @@ button.btn {
         font-size: 0.9rem;
         padding: 10px 20px;
     }
+
+    #post-preview {
+        width: 90%;
+    }
 }
