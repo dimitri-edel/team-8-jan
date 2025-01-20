@@ -217,7 +217,14 @@ assets/images/
 [Back to Contents](#contents)
 
 ## Dependencies
-No dependencies in this current build, however for a better social post experience we could integrate an API for each social media platform however this would require subscriptions we did not have time for in this project.
+- Bootstrap
+- JQuery
+- Fontawesome
+
+## Possible Improvements
+
+For a better social post experience we could integrate an API for each social media platform however this would require subscriptions we did not have time for in this project.
+
 
 [Back to Contents](#contents)
 
@@ -333,5 +340,9 @@ https://validator.w3.org/nu
 https://jigsaw.we.org/css-validator/validator
 
 3. Lighthouse.
+
+![Results Lighthouse](/documentation/tests/lighthouse.png)
+
+The performance is subpar, because the resolution of some images is too high. The images that must not have high resulution must be converted to a lower resolution.
 
 [Back to Contents](#contents)
