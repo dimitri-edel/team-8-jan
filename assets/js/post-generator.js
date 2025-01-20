@@ -188,14 +188,3 @@ function postOnLinkedIn() {
     const linkedinUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(image)}&title=${encodeURIComponent(headline)}&text=${encodeURIComponent(text)}`;
     window.open(linkedinUrl, '_blank');
 }
-
-function postOnInstagram() {
-    const image = document.getElementById('post-image').src;
-    const text = document.getElementById('post-text').value;
-    const headline = document.getElementById('post-title').textContent;
-
-    const caption = `${headline}\n${text} #️⃣hashtags`;
-    const encodedCaption = encodeURIComponent(caption);
-    const instagramUrl = `https://www.instagram.com/p/?image=${image}&caption=${encodedCaption}`;
-    window.open(instagramUrl, '_blank');
-}
